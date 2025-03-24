@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 28px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border:0px solid black;
+}
+
+/* Logo Container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+/* Navigation Items */
+.nav-item ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item li {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.nav-item li a {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  z-index: 1;
+}
+
+.nav-item li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    45deg,
+    
+    #ff9933,#ffffff
+  );
+  background-size: 400%;
+  border-radius: 8px;
+  filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-item li:hover a {
+  color: #ff6600;
+}
+
+.nav-item li:hover::after {
+  opacity: 1;
+  animation: glowing 8s linear infinite;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+
+
+
+
+.seacrhBar{
+  height:60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.srcbar{
+  height:55px;
+  width:30%;
+  border-radius: 2rem;
+}
+
+
+.res-container {
+  width: 100%;
+  
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;  
+  justify-content: center;  
+} 
+
+
+*/
+
+
+
+/* .res-card {
+  width: 250px;
+  padding: 10px;
+  border-radius: 1rem;
+  background-color: #dad0d0;
+ 
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.res-card:hover {
+  transform: perspective(1000px) rotateY(15deg); 
+  background-color:rgb(255, 98, 19); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.res-card img {
+  width: 100%;
+  border-radius: 1rem;
+  transition: transform 0.6s;
+}
+
+ .res-card:hover img {
+  transform: scale(1.05); 
+} 
+
+.res-card h2, 
+.res-card h4 {
+  transition: color 0.6s;
+}
+
+.res-card:hover h2,
+.res-card:hover h4 {
+  color: rgb(0, 0, 0); 
+} */
+
+/* gemni */
+
+
+
+.user-card{
+  border:2px solid black;
+  padding: 10px;
+  width: min-content;
+  
+}
+
+.Like-btn{
+  margin-top: 1rem;
+  height:70px;
+  width:90px;
+  border-radius: 1rem;
+}
