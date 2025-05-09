@@ -126,12 +126,12 @@ const Header = () => {
 
           {!user ? (
             <>
-              <Link to="/login">
+              <Link to="/">
                 <button className="bg-white text-orange-600 px-4 py-1.5 rounded-full font-bold hover:bg-orange-100 transition">
                   Login
                 </button>
               </Link>
-              <Link to="/signup">
+              <Link to="/">
                 <button className="bg-white text-orange-600 px-4 py-1.5 rounded-full font-bold hover:bg-orange-100 transition">
                   Signup
                 </button>
@@ -181,7 +181,7 @@ const Header = () => {
               <span className="block font-medium text-left">Hello, {user.displayName || "User"}</span>
               <button
                 onClick={() => {
-                  handleLogout();
+                  // handleLogout();
                   toggleMobileMenu();
                 }}
                 className="w-full text-left hover:text-orange-200 transition"
