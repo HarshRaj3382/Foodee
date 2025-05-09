@@ -62,7 +62,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
-import { logoutUser } from "../utils/authslice";
+import { logoutUser } from "../utils/authSlice";
 import { useState } from "react";
 
 const Header = () => {
