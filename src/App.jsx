@@ -18,6 +18,7 @@ import Login from "./component/Login";
 import Signup from "./component/Signup";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Footer from './component/Footer';
 
 
 
@@ -26,7 +27,8 @@ const AppLayout = () => {
      <Provider store={appStore}>
     <div className="app">
       <Header />
-      <Outlet />  ,
+      <Outlet />  
+      <Footer />
       <ToastContainer position="top-right" autoClose={2000} />
     </div>
     </Provider>
@@ -82,6 +84,9 @@ const router = createBrowserRouter([
   {
     path:'/cart',
     element:<Cart />
+  },{
+    path:'/Footer',
+    element:<Footer />
   }
 ]);
 

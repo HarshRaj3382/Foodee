@@ -64,7 +64,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { logoutUser } from "../utils/authSlice";
 import { useState } from "react";
-
+import logo from "../assets/logo.jpeg";
 const Header = () => {
   const cartItem = useSelector((store) => store.cart.items);
   const user = useSelector((state) => state.auth.user);
@@ -87,7 +87,8 @@ const Header = () => {
         <Link to="/" className="flex items-center space-x-2">
           <img
             className="h-10 w-10 rounded-full"
-            src="https://img.freepik.com/premium-vector/restaurant-logo-vector-design-white-background_1277164-10430.jpg?semt=ais_hybrid"
+            // src="https://img.freepik.com/premium-vector/restaurant-logo-vector-design-white-background_1277164-10430.jpg?semt=ais_hybrid"
+            src={logo}
             alt="Logo"
           />
           <span className="text-2xl font-extrabold tracking-tight">SWAGGY</span>

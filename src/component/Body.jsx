@@ -101,7 +101,7 @@ const Body = () => {
 
       {/* Filters - Centered on larger screens, attractive mobile style */}
       <div className="mt-6">
-        <div className="flex justify-center overflow-x-auto scroll-smooth pb-4">
+        <div className="flex justify-center overflow-x-auto scroll-smooth pb-4 pl-5">
           <button
             className={`px-4 py-2 rounded-full font-medium transition-all text-sm sm:text-base ${
               activeFilter === "All"
